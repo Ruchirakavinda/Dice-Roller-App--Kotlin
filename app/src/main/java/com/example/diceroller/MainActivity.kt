@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun diceRoller() {
         val resultText: TextView = findViewById(R.id.result_text)
-        resultText.text = "Dice Rolled!"
+        val randomInt = java.util.Random().nextInt(6)+1
+        resultText.text = randomInt.toString()
     }
 }
