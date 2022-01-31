@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val emptydice : ImageView = findViewById(R.id.dice_image)
         var itemview = item.itemId
         when(itemview){
-            R.id.reset -> emptydice.setImageResource(R.drawable.empty_dice),Toast.makeText(applicationContext,"Dice Reseted", Toast.LENGTH_LONG).show()
+            R.id.reset -> emptydice.setImageResource(R.drawable.empty_dice)
             R.id.user -> Toast.makeText(applicationContext,"User Details", Toast.LENGTH_LONG).show()
             R.id.settings -> Toast.makeText(applicationContext,"Settings", Toast.LENGTH_LONG).show()
             R.id.more -> Toast.makeText(applicationContext,"More Options", Toast.LENGTH_LONG).show()

@@ -31,18 +31,28 @@
         android:background="@color/white"
         android:layout_gravity="center_horizontal">
 
-
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingConstraints"
+            android:paddingTop="100dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The Dice Roller"
-            android:textSize="50dp"
-            android:textColor="@color/black"
             android:fontFamily="cursive"
+            android:text="The Dice Roller"
+            android:textColor="@color/black"
             android:textFontWeight="@android:integer/config_mediumAnimTime"
+            android:textSize="50dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="102dp" />
+            tools:layout_editor_absoluteY="107dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,7 +63,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="162dp" />
+            tools:layout_editor_absoluteY="175dp"
+            tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/dice_image"
